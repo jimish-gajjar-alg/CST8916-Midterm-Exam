@@ -1,0 +1,31 @@
+### Get all students
+GET http://localhost:3000/students
+Accept: application/json
+
+### Get a specific student by ID
+GET http://localhost:3000/students/1
+Accept: application/json
+
+### Add a new student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Jimish Gajar",
+    "grade": "A",
+    "email": "gajj0008@algonquinlive.com"
+}
+
+### Update an existing student by ID
+PUT http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+    "name": "Jimish Gajjar Updated",
+    "grade": "A+",
+    "email": "gajj0008@algonquinlive.com"
+}
+
+### Delete a student by ID
+DELETE http://localhost:3000/students/1
